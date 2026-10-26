@@ -21,7 +21,11 @@
   {
     "id": "8aKP4I8pLVk",
     "title": "CSI: Crime Scene Investigation | Windows 11 PC Fix #csi #crimesceneinvestigation #gamefix",
-    "publishedAt": "2026-10-24T03:01:07Z"
+    "publishedAt": "2026-10-24T03:01:07Z",
+    "type": "fix",
+    "games": [
+      "csi-crime-scene-investigation"
+    ]
   },
   {
     "id": "kDOeKdWSpko",
@@ -35,7 +39,8 @@
   {
     "id": "MJDJzDKpn6s",
     "title": "Metal Slug XX (Metal Slug 7) | Full Video Link | Co-op #metalslug7",
-    "publishedAt": "2026-10-16T12:00:16Z"
+    "publishedAt": "2026-10-16T12:00:16Z",
+    "games": []
   },
   {
     "id": "DathPKPbk6E",
