@@ -1,0 +1,31 @@
+name: Verify YouTube refresh (no deployment)
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/check-videos.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Check secret is configured
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: test -n "$YOUTUBE_API_KEY"
+      - name: Refresh public videos using saved key
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: npm run sync:videos
+      - run: npm test
+      - run: npm run check
+      - run: npm run build
