@@ -2,6 +2,7 @@
   {
     "id": "8NXo25UcAfQ",
     "title": "RetroInput | Bringing Modern Controller Support to Classic PC Games | The Suffering & Ties That Bind",
+    "publishedAt": "2026-10-26T05:14:40Z",
     "type": "controller",
     "games": [
       "the-suffering",
@@ -11,36 +12,35 @@
   {
     "id": "3BjBRjXNink",
     "title": "CSI: Dark Motives | Windows 11 AIO Fix #csi",
+    "publishedAt": "2026-10-26T05:14:29Z",
     "type": "fix",
-    "game": "csi-dark-motives",
     "games": [
       "csi-dark-motives"
     ]
   },
   {
+    "id": "8aKP4I8pLVk",
+    "title": "CSI: Crime Scene Investigation | Windows 11 PC Fix #csi #crimesceneinvestigation #gamefix",
+    "publishedAt": "2026-10-24T03:01:07Z"
+  },
+  {
     "id": "kDOeKdWSpko",
     "title": "CSI: Crime Scene Investigation | Windows 11 PC Fix | 1440p 60FPS",
-    "game": "csi-crime-scene-investigation",
+    "publishedAt": "2026-10-24T02:21:15Z",
     "type": "fix",
     "games": [
       "csi-crime-scene-investigation"
     ]
   },
   {
+    "id": "MJDJzDKpn6s",
+    "title": "Metal Slug XX (Metal Slug 7) | Full Video Link | Co-op #metalslug7",
+    "publishedAt": "2026-10-16T12:00:16Z"
+  },
+  {
     "id": "DathPKPbk6E",
-    "title": "Metal Slug XX (Metal Slug 7) | Full game playthrough | 1440p 60FPS | Co-op",
-    "type": "gameplay",
-    "games": []
-  },
-  {
-    "id": "EEN-9cKh-qY",
-    "title": "Metal Slug 6 | Full game playthrough | 1440p 60FPS",
-    "type": "gameplay",
-    "games": []
-  },
-  {
-    "id": "fhpi7MbWH1k",
-    "title": "Metal Slug 5 | Full game playthrough | 1440p 60FPS",
+    "title": "Metal Slug XX (Metal Slug 7) | Full game playthrough | 1440p 60FPS | Co-op #metalslug7",
+    "publishedAt": "2026-10-16T11:00:06Z",
     "type": "gameplay",
     "games": []
   }

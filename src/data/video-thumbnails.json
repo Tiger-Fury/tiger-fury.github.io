@@ -15,14 +15,14 @@
     "width": 1280
   },
   "DathPKPbk6E": {
-    "file": "DathPKPbk6E-sharp.jpg",
-    "height": 720,
-    "width": 1280
+    "file": "DathPKPbk6E-auto.jpg",
+    "width": 1280,
+    "height": 720
   },
   "8NXo25UcAfQ": {
-    "file": "8NXo25UcAfQ-sharp.jpg",
-    "height": 720,
-    "width": 1280
+    "file": "8NXo25UcAfQ-auto.jpg",
+    "width": 1280,
+    "height": 720
   },
   "EEN-9cKh-qY": {
     "file": "EEN-9cKh-qY-sharp.jpg",
@@ -30,9 +30,9 @@
     "width": 1280
   },
   "kDOeKdWSpko": {
-    "file": "kDOeKdWSpko-sharp.jpg",
-    "height": 720,
-    "width": 1280
+    "file": "kDOeKdWSpko-auto.jpg",
+    "width": 1280,
+    "height": 720
   },
   "fhpi7MbWH1k": {
     "file": "fhpi7MbWH1k-sharp.jpg",
@@ -45,8 +45,18 @@
     "width": 1280
   },
   "3BjBRjXNink": {
-    "file": "3BjBRjXNink-sharp.jpg",
-    "height": 720,
-    "width": 1280
+    "file": "3BjBRjXNink-auto.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "8aKP4I8pLVk": {
+    "file": "8aKP4I8pLVk-auto.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "MJDJzDKpn6s": {
+    "file": "MJDJzDKpn6s-auto.jpg",
+    "width": 1280,
+    "height": 720
   }
 }
