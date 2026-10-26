@@ -23,13 +23,15 @@ Static output is written to `dist/`. `npm run preview` serves the built site loc
 - `src/data/games.ts`: game catalogue.
 - `src/data/releases.json`: verified public release snapshot and per-game downloads.
 - `src/data/release-targets.json`: exact package/DLL matching rules.
-- `src/data/videos.json`: curated game-page video showcases.
+- `src/data/videos.json`: manual video assignments and exclusions (these override automatic matching).
+- `src/data/game-videos.json`: automatically matched game-page showcases.
+- `src/data/video-aliases.json`: additional recognised game names.
 - `src/data/latest-videos.json`: homepage's six latest public uploads.
 - `src/data/video-thumbnails.json`: local thumbnail files and dimensions.
 
 `npm run sync:releases` scans stable public releases independently for each game, retaining older game downloads when a newer release only updates another game. Drafts and prereleases are excluded.
 
-`npm run sync:videos` refreshes the public channel gallery. It uses `YOUTUBE_API_KEY` from the environment when provided, otherwise the public feed. The feed returned HTTP 404 during local testing; the current snapshot was preserved. API-key refresh, tests and build passed in GitHub Actions. New game-specific video associations remain curated.
+`npm run sync:videos` refreshes the public channel gallery. It uses `YOUTUBE_API_KEY` from the environment when provided, otherwise the public feed. The feed returned HTTP 404 during local testing; the current snapshot was preserved. API-key refresh, tests and build passed in GitHub Actions. Public uploads are scanned across the full channel history. Recognised fix, controller and full-playthrough titles are matched by the game name before the first |, ignoring punctuation, parenthetical notes and hashtags. Specific sequel names do not match their originals. Ambiguous titles remain unassigned.
 
 ## Deployment status
 
