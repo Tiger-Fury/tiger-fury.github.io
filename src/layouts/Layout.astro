@@ -2,6 +2,9 @@
 import '../styles/global.css';
 const { title = 'TigerFury Fixes — Classic Games. Modern Systems.', description = 'PC game compatibility fixes and RetroInput controller enhancements. Find game-specific downloads, release notes and installation guides.' } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const canonical=new URL(Astro.url.pathname,Astro.site);
+const shareImage=new URL(base+'images/tigerfury-logo.png',Astro.site);
+const noindex=Astro.url.pathname.endsWith('/404.html');
 const socials=[
  {name:'YouTube',icon:'youtube',url:'https://www.youtube.com/@tigerfury'},
  {name:'Twitch',icon:'twitch',url:'https://www.twitch.tv/tigerfuryuk'},
@@ -12,7 +15,7 @@ const socials=[
  {name:'GitHub',icon:'github',url:'https://github.com/Tiger-Fury'}
 ];
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#050b13"/><title>{title}</title><link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml"/></head><body>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#050b13"/><title>{title}</title><link rel="canonical" href={canonical}/><meta property="og:type" content="website"/><meta property="og:site_name" content="TigerFury Fixes"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={shareImage}/><meta property="og:image:alt" content="TigerFury logo"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={shareImage}/>{noindex && <meta name="robots" content="noindex"/>}<link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml"/></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><div class="shell header-inner"><a class="brand" href={base} aria-label="TigerFury Fixes home"><img class="tiger-logo" src={`${base}images/tigerfury-logo.png`} alt="" width="52" height="52"/><span>TIGERFURY <b>FIXES</b><small>CLASSIC GAMES. MODERN SYSTEMS.</small></span></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu ☰</button><nav id="navigation" aria-label="Main navigation"><a href={base}>Home</a><a href={`${base}#game-fixes`}>Game Fixes</a><a href={`${base}#controller-support`}>Controllers</a><a href={`${base}#retroinput`}>Projects</a><a href={`${base}#releases`}>Downloads</a><a href={`${base}#guides`}>Guides</a><a href={`${base}#about`}>About</a></nav></div></header>
 <main id="main"><slot/></main>

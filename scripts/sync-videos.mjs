@@ -1,8 +1,9 @@
 import {readFile,writeFile,rename,rm} from 'node:fs/promises';
 import {imageSize} from 'image-size';
-import {channelId,parseFeed,validateVideos} from './video-feed.mjs';
+import {channelId,validateVideos} from './video-feed.mjs';
 import {matchVideo} from './video-matching.mjs';
 import {games} from '../src/data/games.ts';
+import {includeVideo} from './video-duration.mjs';
 const root=new URL('../',import.meta.url);
 async function request(url){const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw new Error(`Public video service returned ${r.status}`);return r;}
 const curated=JSON.parse(await readFile(new URL('src/data/videos.json',root),'utf8'));
@@ -19,10 +20,18 @@ if(process.env.YOUTUBE_API_KEY){
   publicVideos.push(...(data.items??[]).map(item=>({id:item.snippet?.resourceId?.videoId,title:item.snippet?.title,publishedAt:item.snippet?.publishedAt,channel:item.snippet?.videoOwnerChannelId})));
   pageToken=data.nextPageToken;
  }while(pageToken);
+ const eligible=new Set();
+ for(let offset=0;offset<publicVideos.length;offset+=50){
+  const url=new URL('https://www.googleapis.com/youtube/v3/videos');
+  url.search=new URLSearchParams({part:'contentDetails,status',id:publicVideos.slice(offset,offset+50).map(v=>v.id).join(','),key:process.env.YOUTUBE_API_KEY}).toString();
+  const data=await (await request(url)).json();
+  for(const details of data.items??[])if(includeVideo(details,overrides[details.id]))eligible.add(details.id);
+ }
+ publicVideos=publicVideos.filter(video=>eligible.has(video.id));
  latest=validateVideos(publicVideos);fullHistory=true;
 }else{
  // The limited feed cannot safely replace complete game-page history.
- latest=parseFeed(await (await request(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`)).text());publicVideos=latest;
+ throw new Error('YOUTUBE_API_KEY is required to verify duration; existing snapshots preserved.');
 }
 const classified=publicVideos.map(video=>({id:video.id,title:video.title,publishedAt:video.publishedAt,...matchVideo(video,matchingGames,overrides)}));
 let assigned;
@@ -49,3 +58,4 @@ for(const [name,data] of [['video-thumbnails.json',thumbs],['latest-videos.json'
  try{await writeFile(temporary,JSON.stringify(data,null,2)+'\n');await rename(temporary,destination);}finally{await rm(temporary,{force:true});}
 }
 console.log(`Refreshed ${next.length} latest videos and ${assigned.length} game showcases from ${publicVideos.length} public uploads.`);
+
