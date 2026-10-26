@@ -1,0 +1,146 @@
+{
+  "checkedAt": "2026-10-26",
+  "releases": [
+    {
+      "repo": "CSI-Dark-Motives-AiO-Fix",
+      "tag": "v1.0",
+      "title": "V1.0 Initial fixes",
+      "publishedAt": "2026-10-26T00:48:56Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/tag/v1.0",
+      "assets": [
+        {
+          "name": "CSI.Dark.Motives.Save.Migration.Tool.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/CSI.Dark.Motives.Save.Migration.Tool.zip"
+        },
+        {
+          "name": "Desktop.Resolution.Fill.Fix.CSI-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Desktop.Resolution.Fill.Fix.CSI-.Dark.Motives.zip"
+        },
+        {
+          "name": "Desktop.Resolution.Fit.Fix.CSI-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Desktop.Resolution.Fit.Fix.CSI-.Dark.Motives.zip"
+        },
+        {
+          "name": "Original.Resolution.Fix.CSI.-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Original.Resolution.Fix.CSI.-.Dark.Motives.zip"
+        }
+      ]
+    },
+    {
+      "repo": "Crime-Scene-Investigation---CSI-AiO-Fix",
+      "tag": "csi",
+      "title": "Crime Scene Investigation CSI AiO Fix V 1.0",
+      "publishedAt": "2026-10-24T00:55:58Z",
+      "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/tag/csi",
+      "assets": [
+        {
+          "name": "CSI.Desktop-Fill.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Desktop-Fill.AiO.zip"
+        },
+        {
+          "name": "CSI.Desktop-Fit.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Desktop-Fit.AiO.zip"
+        },
+        {
+          "name": "CSI.Original-800x600.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Original-800x600.AiO.zip"
+        }
+      ]
+    },
+    {
+      "repo": "RetroInput-Public",
+      "tag": "v1.0.1",
+      "title": "RetroInput v1.0.1 - Controller artwork switching fix",
+      "publishedAt": "2026-10-22T20:35:13Z",
+      "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/tag/v1.0.1",
+      "assets": [
+        {
+          "name": "RetroInput-The-Suffering-Ties-That-Bind-v1.0.1-Win32.zip",
+          "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/download/v1.0.1/RetroInput-The-Suffering-Ties-That-Bind-v1.0.1-Win32.zip"
+        },
+        {
+          "name": "RetroInput-The-Suffering-v1.0.1-Win32.zip",
+          "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/download/v1.0.1/RetroInput-The-Suffering-v1.0.1-Win32.zip"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/download/v1.0.1/SHA256SUMS.txt"
+        }
+      ]
+    }
+  ],
+  "gameReleases": {
+    "the-suffering": {
+      "repo": "RetroInput-Public",
+      "tag": "v1.0.1",
+      "title": "RetroInput v1.0.1 - Controller artwork switching fix",
+      "publishedAt": "2026-10-22T20:35:13Z",
+      "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/tag/v1.0.1",
+      "assets": [
+        {
+          "name": "RetroInput-The-Suffering-v1.0.1-Win32.zip",
+          "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/download/v1.0.1/RetroInput-The-Suffering-v1.0.1-Win32.zip"
+        }
+      ]
+    },
+    "ties-that-bind": {
+      "repo": "RetroInput-Public",
+      "tag": "v1.0.1",
+      "title": "RetroInput v1.0.1 - Controller artwork switching fix",
+      "publishedAt": "2026-10-22T20:35:13Z",
+      "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/tag/v1.0.1",
+      "assets": [
+        {
+          "name": "RetroInput-The-Suffering-Ties-That-Bind-v1.0.1-Win32.zip",
+          "url": "https://github.com/Tiger-Fury/RetroInput-Public/releases/download/v1.0.1/RetroInput-The-Suffering-Ties-That-Bind-v1.0.1-Win32.zip"
+        }
+      ]
+    },
+    "csi-crime-scene-investigation": {
+      "repo": "Crime-Scene-Investigation---CSI-AiO-Fix",
+      "tag": "csi",
+      "title": "Crime Scene Investigation CSI AiO Fix V 1.0",
+      "publishedAt": "2026-10-24T00:55:58Z",
+      "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/tag/csi",
+      "assets": [
+        {
+          "name": "CSI.Desktop-Fill.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Desktop-Fill.AiO.zip"
+        },
+        {
+          "name": "CSI.Desktop-Fit.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Desktop-Fit.AiO.zip"
+        },
+        {
+          "name": "CSI.Original-800x600.AiO.zip",
+          "url": "https://github.com/Tiger-Fury/Crime-Scene-Investigation---CSI-AiO-Fix/releases/download/csi/CSI.Original-800x600.AiO.zip"
+        }
+      ]
+    },
+    "csi-dark-motives": {
+      "repo": "CSI-Dark-Motives-AiO-Fix",
+      "tag": "v1.0",
+      "title": "V1.0 Initial fixes",
+      "publishedAt": "2026-10-26T00:48:56Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/tag/v1.0",
+      "assets": [
+        {
+          "name": "CSI.Dark.Motives.Save.Migration.Tool.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/CSI.Dark.Motives.Save.Migration.Tool.zip"
+        },
+        {
+          "name": "Desktop.Resolution.Fill.Fix.CSI-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Desktop.Resolution.Fill.Fix.CSI-.Dark.Motives.zip"
+        },
+        {
+          "name": "Desktop.Resolution.Fit.Fix.CSI-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Desktop.Resolution.Fit.Fix.CSI-.Dark.Motives.zip"
+        },
+        {
+          "name": "Original.Resolution.Fix.CSI.-.Dark.Motives.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Original.Resolution.Fix.CSI.-.Dark.Motives.zip"
+        }
+      ]
+    }
+  }
+}

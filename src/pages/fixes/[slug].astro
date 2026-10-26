@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import {games} from '../../data/games';
+import snapshot from '../../data/releases.json';
+import videos from '../../data/videos.json';
+import VideoCard from '../../components/VideoCard.astro';
+export function getStaticPaths(){return games.map(game=>({params:{slug:game.slug},props:{game}}));}
+const {game}=Astro.props;
+const cover=game.slug==='the-suffering'?'the-suffering.jpg':game.slug==='ties-that-bind'?'ties-that-bind.jpg':null;
+const release=snapshot.gameReleases[game.slug as keyof typeof snapshot.gameReleases];
+function describeAsset(name:string){
+ const normalized=name.toLowerCase();
+ if(normalized.includes('migration'))return {label:'Save migration tool',description:'Optional: import existing saves with backups. Not needed for a new installation.'};
+ if(normalized.includes('original'))return {label:'Original 800 × 600',description:'Keep the original resolution and presentation, with compatibility fixes.'};
+ if(normalized.includes('fit'))return {label:'Desktop Fit',description:'Scale to your desktop while preserving 4:3 proportions. Borders may appear.'};
+ if(normalized.includes('fill'))return {label:'Desktop Fill',description:'Stretch the complete picture to your desktop. No cropping; proportions change.'};
+ if(normalized.endsWith('.dll'))return {label:'Controller DLL update',description:'For an existing RetroInput installation. Keep your loader and configuration; read the release notes.'};
+ if(normalized.endsWith('.zip'))return {label:'RetroInput package',description:'Controller-support package for this game. Follow the included installation instructions.'};
+ return {label:name,description:'Additional release file. See the release notes for details.'};
+}
+const issueUrl='https://github.com/Tiger-Fury/'+game.repo+'/issues';
+---
+<Layout title={`${game.title} — TigerFury Fixes`} description={game.description}><div class="shell detail"><a class="text-link" href={`${import.meta.env.BASE_URL}#catalogue`}>← All game fixes</a><div class="detail-grid"><div class:list={[`art detail-art ${game.theme}`, {'has-cover':cover}]} aria-hidden="true">{cover && <img class="game-cover" src={import.meta.env.BASE_URL+'images/'+cover} alt="" width="256" height="329"/>}<span class="art-grid"></span><span class="art-title">{game.mark}</span></div><div><p class="eyebrow">{game.year} · {game.category}</p><h1>{game.title}</h1><p class="lead">{game.description}</p><p>{game.details}</p><div class="flex flex-wrap gap-3 mt-6"><a class="button primary" href={release.url}>Downloads & release notes ↗</a><a class="button secondary" href={game.source}>Project documentation ↗</a></div><p class="section-note">Public release {release.tag}. Verified {snapshot.checkedAt}. Read the package instructions and back up replaced files.</p></div></div><section class="detail-section"><h2>Choose the right package</h2><p>{game.repo==='RetroInput-Public'?'These downloads are selected for this game from stable RetroInput releases. Each game uses a separate DLL. For a standalone DLL update, keep your existing loader and configuration and follow the linked release notes.':game.slug==='csi-dark-motives'?'Choose one display-mode package: Original, Fit or Fill. The save migration tool is optional for existing saves.':'Choose one package: Original 800 × 600, Desktop Fit or Desktop Fill. Use each executable with its matching scripts.cxt file. The original game is required.'}</p><ul class="download-choices">{release.assets.map(asset=>{const info=describeAsset(asset.name);return <li><div><h3>{info.label}</h3><p>{info.description}</p><small>{asset.name}</small></div><a class="button secondary" href={asset.url} aria-label={'Download '+info.label+' for '+game.title}>Download ↓</a></li>})}</ul></section><section class="game-support" aria-labelledby="support-heading"><div><h2 id="support-heading">Need a hand?</h2><p>Check existing reports or open an issue with your game version, Windows version and a description of what happened.</p></div><a class="button secondary" href={issueUrl}>Report an issue ↗</a></section>{videos.some(video=>video.games.includes(game.slug)) && <section class="detail-section"><h2>Video showcase</h2><p class="section-note">Fix showcases demonstrate the project; full playthroughs may predate the current release.</p><div class="game-video game-video-grid">{videos.filter(video=>video.games.includes(game.slug)).map(video=><VideoCard video={video}/>)}</div></section>}</div></Layout>
+
+

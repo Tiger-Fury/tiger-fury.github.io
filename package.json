@@ -1,0 +1,26 @@
+{
+  "name": "tigerfury-fixes",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "sync:releases": "node scripts/sync-releases.mjs",
+    "sync:videos": "node scripts/sync-videos.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "astro": "^7.4.2",
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "fast-xml-parser": "^5.11.2",
+    "image-size": "^2.0.4",
+    "typescript": "^5.9.0"
+  }
+}

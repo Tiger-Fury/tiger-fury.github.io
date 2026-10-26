@@ -1,0 +1,77 @@
+[
+  {
+    "id": "8NXo25UcAfQ",
+    "title": "RetroInput | Bringing Modern Controller Support to Classic PC Games | The Suffering & Ties That Bind",
+    "type": "controller",
+    "games": [
+      "the-suffering",
+      "ties-that-bind"
+    ]
+  },
+  {
+    "id": "3BjBRjXNink",
+    "title": "CSI: Dark Motives | Windows 11 AIO Fix #csi",
+    "type": "fix",
+    "game": "csi-dark-motives",
+    "games": [
+      "csi-dark-motives"
+    ]
+  },
+  {
+    "id": "kDOeKdWSpko",
+    "title": "CSI: Crime Scene Investigation | Windows 11 PC Fix | 1440p 60FPS",
+    "game": "csi-crime-scene-investigation",
+    "type": "fix",
+    "games": [
+      "csi-crime-scene-investigation"
+    ]
+  },
+  {
+    "id": "DathPKPbk6E",
+    "title": "Metal Slug XX (Metal Slug 7) | Full game playthrough | 1440p 60FPS | Co-op",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "EEN-9cKh-qY",
+    "title": "Metal Slug 6 | Full game playthrough | 1440p 60FPS",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "fhpi7MbWH1k",
+    "title": "Metal Slug 5 | Full game playthrough | 1440p 60FPS",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "X-wh3rDjsak",
+    "title": "The Walking Dead: The Final Season | Definitive Edition | Full game playthrough",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "tBmfwRxpdCI",
+    "title": "Mortal Kombat II | Sega Mega Drive / Genesis | Full game playthrough | 1440p 60FPS",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "KGkxLRwSIm8",
+    "title": "CSI: Crime Scene Investigation | Full Game Playthrough | No Commentary | 4K 60FPS",
+    "game": "csi-crime-scene-investigation",
+    "type": "gameplay",
+    "games": [
+      "csi-crime-scene-investigation"
+    ]
+  },
+  {
+    "id": "IbPB_UTB3DQ",
+    "title": "CSI: Dark Motives (Windows 11) Full Game Playthrough | All 5 Cases Solved | 1440p 60FPS",
+    "game": "csi-dark-motives",
+    "type": "gameplay",
+    "games": [
+      "csi-dark-motives"
+    ]
+  }
+]

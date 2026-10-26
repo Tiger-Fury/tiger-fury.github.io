@@ -1,0 +1,47 @@
+[
+  {
+    "id": "8NXo25UcAfQ",
+    "title": "RetroInput | Bringing Modern Controller Support to Classic PC Games | The Suffering & Ties That Bind",
+    "type": "controller",
+    "games": [
+      "the-suffering",
+      "ties-that-bind"
+    ]
+  },
+  {
+    "id": "3BjBRjXNink",
+    "title": "CSI: Dark Motives | Windows 11 AIO Fix #csi",
+    "type": "fix",
+    "game": "csi-dark-motives",
+    "games": [
+      "csi-dark-motives"
+    ]
+  },
+  {
+    "id": "kDOeKdWSpko",
+    "title": "CSI: Crime Scene Investigation | Windows 11 PC Fix | 1440p 60FPS",
+    "game": "csi-crime-scene-investigation",
+    "type": "fix",
+    "games": [
+      "csi-crime-scene-investigation"
+    ]
+  },
+  {
+    "id": "DathPKPbk6E",
+    "title": "Metal Slug XX (Metal Slug 7) | Full game playthrough | 1440p 60FPS | Co-op",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "EEN-9cKh-qY",
+    "title": "Metal Slug 6 | Full game playthrough | 1440p 60FPS",
+    "type": "gameplay",
+    "games": []
+  },
+  {
+    "id": "fhpi7MbWH1k",
+    "title": "Metal Slug 5 | Full game playthrough | 1440p 60FPS",
+    "type": "gameplay",
+    "games": []
+  }
+]

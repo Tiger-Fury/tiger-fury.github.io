@@ -1,0 +1,16 @@
+---
+const playlistUrl='https://www.youtube.com/playlist?list=PLT8fenmuid0g';
+---
+<section id="showcase" class="video-showcase" aria-labelledby="showcase-heading"><div class="section-heading"><h2 id="showcase-heading">RetroInput video showcase</h2><a href={playlistUrl}>Open playlist ↗</a></div><div class="video-stage" data-playlist-player><button class="playlist-preview" type="button" data-load-playlist aria-label="Load RetroInput supported games showcase playlist"><img src={import.meta.env.BASE_URL+'images/videos/8NXo25UcAfQ-maxres.jpg'} alt="RetroInput showcase: The Suffering and Ties That Bind" width="1280" height="720"/><span class="playlist-play" aria-hidden="true">▶</span><span class="playlist-preview-caption"><strong>RetroInput — The Suffering &amp; Ties That Bind</strong><span>Watch the supported games showcase playlist</span></span></button></div><p class="section-note">If a video is unavailable here, <a class="text-link" href={playlistUrl}>open the playlist on YouTube ↗</a>.</p><noscript><p><a class="text-link" href={playlistUrl}>Watch the playlist on YouTube ↗</a></p></noscript></section>
+<script>
+document.querySelectorAll<HTMLButtonElement>('[data-load-playlist]').forEach(button=>button.addEventListener('click',()=>{
+ const stage=button.closest('[data-playlist-player]');if(!stage)return;
+ const iframe=document.createElement('iframe');
+ iframe.src='https://www.youtube-nocookie.com/embed/8NXo25UcAfQ?listType=playlist&list=PLT8fenmuid0g&autoplay=0';
+ iframe.title='RetroInput showcase playlist';iframe.allow='encrypted-media; picture-in-picture; fullscreen';
+ iframe.allowFullscreen=true;iframe.referrerPolicy='strict-origin-when-cross-origin';iframe.tabIndex=0;
+ stage.replaceChildren(iframe);iframe.focus();
+}));
+</script>
+
+
