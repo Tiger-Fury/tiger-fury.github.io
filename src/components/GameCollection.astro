@@ -1,0 +1,18 @@
+---
+import GameCard from './GameCard.astro';
+import type {games} from '../data/games';
+const {items}=Astro.props as {items:typeof games};
+---
+<div data-game-collection><div class="catalogue-controls"><div class="search-wrap"><label class="sr-only" for="category-search">Search games in this category</label><input id="category-search" type="search" placeholder="Search for a game…" autocomplete="off"/></div><span class="muted">Alphabetical A–Z</span></div><p class="section-note" data-count role="status" aria-live="polite">{items.length} games</p><div class="featured-grid category-grid">{items.map(game=><GameCard game={game}/>)}</div><p data-empty hidden>No games match your search.</p><noscript><p>All games are shown. Search requires JavaScript.</p></noscript></div>
+<script>
+document.querySelectorAll<HTMLElement>('[data-game-collection]').forEach(collection=>{
+ const search=collection.querySelector<HTMLInputElement>('input');
+ const cards=collection.querySelectorAll<HTMLElement>('[data-game]');
+ search?.addEventListener('input',()=>{
+  const query=search.value.trim().toLowerCase();let count=0;
+  cards.forEach(card=>{card.hidden=!(card.dataset.title??'').includes(query);if(!card.hidden)count++});
+  const status=collection.querySelector('[data-count]');if(status)status.textContent=count+' '+(count===1?'game':'games')+' found';
+  const empty=collection.querySelector<HTMLElement>('[data-empty]');if(empty)empty.hidden=count!==0;
+ });
+});
+</script>

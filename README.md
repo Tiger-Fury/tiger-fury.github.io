@@ -57,3 +57,5 @@ Automatic video refresh now checks public visibility, embeddability and API dura
 ## Mod tools
 
 Mod tools are listed separately in `src/data/mod-tools.ts`, with home cards and pages under `/mod-tools/`. Add their repository to `projects.ts` and a ZIP download target to `release-targets.json` to include stable releases in the existing six-hour refresh. Tool download selections share the `gameReleases` snapshot map. Descriptions and supported-format limits are curated from project documentation.
+
+Category pages: `/game-fixes/` and `/mod-tools/`. Game collections use the shared searchable GameCollection component and sort A–Z. The homepage shows up to two entries per category; full collections grow automatically from the existing catalogue data. Controller support links directly to the existing `/retroinput/` project page.
