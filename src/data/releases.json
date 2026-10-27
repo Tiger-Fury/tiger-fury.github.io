@@ -2,6 +2,19 @@
   "checkedAt": "2026-10-27",
   "releases": [
     {
+      "repo": "CSI-Dark-Motives-Cast-Extractor-Tool",
+      "tag": "V2.0",
+      "title": "CSI Dark Motives Cast (.cct) Extractor and Repacker",
+      "publishedAt": "2026-10-27T18:26:35Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-Cast-Extractor-Tool/releases/tag/V2.0",
+      "assets": [
+        {
+          "name": "CSI-Cast-Tool.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-Cast-Extractor-Tool/releases/download/V2.0/CSI-Cast-Tool.zip"
+        }
+      ]
+    },
+    {
       "repo": "CSI-Dark-Motives-AiO-Fix",
       "tag": "v1.0",
       "title": "V1.0 Initial fixes",
@@ -139,6 +152,19 @@
         {
           "name": "Original.Resolution.Fix.CSI.-.Dark.Motives.zip",
           "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-AiO-Fix/releases/download/v1.0/Original.Resolution.Fix.CSI.-.Dark.Motives.zip"
+        }
+      ]
+    },
+    "csi-cast-tool": {
+      "repo": "CSI-Dark-Motives-Cast-Extractor-Tool",
+      "tag": "V2.0",
+      "title": "CSI Dark Motives Cast (.cct) Extractor and Repacker",
+      "publishedAt": "2026-10-27T18:26:35Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-Cast-Extractor-Tool/releases/tag/V2.0",
+      "assets": [
+        {
+          "name": "CSI-Cast-Tool.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-Cast-Extractor-Tool/releases/download/V2.0/CSI-Cast-Tool.zip"
         }
       ]
     }

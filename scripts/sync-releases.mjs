@@ -22,4 +22,4 @@ try {
  await writeFile(temporary,JSON.stringify({checkedAt:new Date().toISOString().slice(0,10),releases,gameReleases},null,2)+'\n');
  await rename(temporary,path);
 }finally{await rm(temporary,{force:true});}
-console.log(`Updated ${releases.length} projects and ${targets.length} game downloads.`);
+console.log(`Updated ${releases.length} projects and ${targets.length} download targets.`);

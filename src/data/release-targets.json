@@ -1,6 +1,26 @@
 [
- {"slug":"the-suffering","repo":"RetroInput-Public","prefix":"retroinput-the-suffering-v","dll":"sufferingxinput.dll"},
- {"slug":"ties-that-bind","repo":"RetroInput-Public","prefix":"retroinput-the-suffering-ties-that-bind-v","dll":"sufferingttbinput.dll"},
- {"slug":"csi-crime-scene-investigation","repo":"Crime-Scene-Investigation---CSI-AiO-Fix"},
- {"slug":"csi-dark-motives","repo":"CSI-Dark-Motives-AiO-Fix"}
+  {
+    "slug": "the-suffering",
+    "repo": "RetroInput-Public",
+    "prefix": "retroinput-the-suffering-v",
+    "dll": "sufferingxinput.dll"
+  },
+  {
+    "slug": "ties-that-bind",
+    "repo": "RetroInput-Public",
+    "prefix": "retroinput-the-suffering-ties-that-bind-v",
+    "dll": "sufferingttbinput.dll"
+  },
+  {
+    "slug": "csi-crime-scene-investigation",
+    "repo": "Crime-Scene-Investigation---CSI-AiO-Fix"
+  },
+  {
+    "slug": "csi-dark-motives",
+    "repo": "CSI-Dark-Motives-AiO-Fix"
+  },
+  {
+    "slug": "csi-cast-tool",
+    "repo": "CSI-Dark-Motives-Cast-Extractor-Tool"
+  }
 ]

@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ModToolCard from '../../components/ModToolCard.astro';
+import {modTools} from '../../data/mod-tools';
+---
+<Layout title="Mod Tools — TigerFury Fixes" description="Tools for exploring, extracting and editing classic game resources."><div class="shell detail"><a class="text-link" href={import.meta.env.BASE_URL}>← Home</a><p class="eyebrow mt-10">EXPLORE. EDIT. REBUILD.</p><h1>Mod <span class="blue">Tools</span></h1><p class="lead">A closer look inside classic games.</p><p class="reading-width">Game-specific utilities for extracting resources and creating modifications. Each tool has its own supported formats and editing limits.</p><section class="detail-section" aria-label="Available mod tools"><div class="featured-grid category-grid">{modTools.map(tool=><ModToolCard tool={tool}/>)}</div></section></div></Layout>

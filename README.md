@@ -53,3 +53,7 @@ See the site's Credits page and individual upstream projects for tool and contri
 Every page has a canonical URL and Open Graph/Twitter summary-card metadata using the TigerFury logo. sitemap.xml and robots.txt are generated from the game catalogue; the 404 page is excluded from indexing. Search-engine discovery and third-party share caches are outside the site's control.
 
 Automatic video refresh now checks public visibility, embeddability and API duration. Uploads of three minutes or less are excluded from both latest videos and game-page matching. This is a conservative Shorts/short-clip filter, not an exact YouTube Shorts classification (the public API does not provide that flag). To include a specific short regular video, set includeShort:true in its manual videos.json record. Without an API key, snapshots are preserved rather than introducing unchecked videos.
+
+## Mod tools
+
+Mod tools are listed separately in `src/data/mod-tools.ts`, with home cards and pages under `/mod-tools/`. Add their repository to `projects.ts` and a ZIP download target to `release-targets.json` to include stable releases in the existing six-hour refresh. Tool download selections share the `gameReleases` snapshot map. Descriptions and supported-format limits are curated from project documentation.
