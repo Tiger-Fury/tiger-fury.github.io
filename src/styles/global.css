@@ -43,3 +43,5 @@
 .category-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.category-directory>a{display:block;padding:22px;border:1px solid var(--line);border-radius:7px;background:#081421}.category-directory>a:hover{border-color:#26759e}.category-directory h3{font-size:17px;font-weight:700;margin:0 0 10px}.category-directory h3 span{color:var(--blue)}.category-directory p{font-size:13px;color:#b4cada;margin:0 0 14px}@media(max-width:700px){.category-directory{grid-template-columns:1fr}}
 
 .csi-miami{background:linear-gradient(0deg,#020a13d9,#020a1344),url('../../public/images/csi-miami.png') center/cover}.csi-miami .art-title{color:#e1f6ff;font-size:39px;letter-spacing:4px}.csi-miami .art-grid{display:none}
+
+.csi3{background:linear-gradient(0deg,#020a13d9,#020a1355),url('../../public/images/csi3.png') center/cover}.csi3 .art-title{color:#e1f6ff;font-size:27px;letter-spacing:2px}.csi3 .art-grid{display:none}
