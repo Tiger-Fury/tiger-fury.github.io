@@ -22,5 +22,9 @@
   {
     "slug": "csi-cast-tool",
     "repo": "CSI-Dark-Motives-Cast-Extractor-Tool"
+  },
+  {
+    "slug": "csi-miami",
+    "repo": "CSI-Miami-AiO-Fix"
   }
 ]

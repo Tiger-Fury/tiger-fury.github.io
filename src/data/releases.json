@@ -1,6 +1,35 @@
 {
-  "checkedAt": "2026-11-24",
+  "checkedAt": "2026-11-25",
   "releases": [
+    {
+      "repo": "CSI-Miami-AiO-Fix",
+      "tag": "v1.0.0",
+      "title": "CSI: Miami AiO Fix v1.0.0",
+      "publishedAt": "2026-11-25T01:20:19Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/tag/v1.0.0",
+      "assets": [
+        {
+          "name": "CSI-Miami-Fill-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Fill-v1.0.0.zip"
+        },
+        {
+          "name": "CSI-Miami-Fit-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Fit-v1.0.0.zip"
+        },
+        {
+          "name": "CSI-Miami-Original-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Original-v1.0.0.zip"
+        },
+        {
+          "name": "release-manifest.json",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/release-manifest.json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/SHA256SUMS.txt"
+        }
+      ]
+    },
     {
       "repo": "CSI-Dark-Motives-Cast-Extractor-Tool",
       "tag": "V2.0",
@@ -165,6 +194,27 @@
         {
           "name": "CSI-Cast-Tool.zip",
           "url": "https://github.com/Tiger-Fury/CSI-Dark-Motives-Cast-Extractor-Tool/releases/download/V2.0/CSI-Cast-Tool.zip"
+        }
+      ]
+    },
+    "csi-miami": {
+      "repo": "CSI-Miami-AiO-Fix",
+      "tag": "v1.0.0",
+      "title": "CSI: Miami AiO Fix v1.0.0",
+      "publishedAt": "2026-11-25T01:20:19Z",
+      "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/tag/v1.0.0",
+      "assets": [
+        {
+          "name": "CSI-Miami-Fill-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Fill-v1.0.0.zip"
+        },
+        {
+          "name": "CSI-Miami-Fit-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Fit-v1.0.0.zip"
+        },
+        {
+          "name": "CSI-Miami-Original-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/CSI-Miami-AiO-Fix/releases/download/v1.0.0/CSI-Miami-Original-v1.0.0.zip"
         }
       ]
     }
