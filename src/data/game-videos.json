@@ -1,5 +1,14 @@
 [
   {
+    "id": "BT2F7I7auxM",
+    "title": "Tom Clancy's Ghost Recon Wildlands | Windows 11 Startup Fix #ghostrecon",
+    "publishedAt": "2026-11-27T21:13:50Z",
+    "type": "fix",
+    "games": [
+      "ghost-recon-wildlands"
+    ]
+  },
+  {
     "id": "hrYB0u5xK7w",
     "title": "CSI: 3 Dimensions of Murder | Windows 11 AIO Fix #csi",
     "publishedAt": "2026-11-25T20:30:01Z",
