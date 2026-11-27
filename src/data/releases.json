@@ -2,6 +2,23 @@
   "checkedAt": "2026-11-27",
   "releases": [
     {
+      "repo": "Wildlands-Startup-Fix",
+      "tag": "v1.0.0",
+      "title": "Wildlands Startup Fix v1.0.0",
+      "publishedAt": "2026-11-27T19:53:23Z",
+      "url": "https://github.com/Tiger-Fury/Wildlands-Startup-Fix/releases/tag/v1.0.0",
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "url": "https://github.com/Tiger-Fury/Wildlands-Startup-Fix/releases/download/v1.0.0/SHA256SUMS.txt"
+        },
+        {
+          "name": "Wildlands-Startup-Fix-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/Wildlands-Startup-Fix/releases/download/v1.0.0/Wildlands-Startup-Fix-v1.0.0.zip"
+        }
+      ]
+    },
+    {
       "repo": "CSI-3-Dimensions-of-Murder-AiO-Fix",
       "tag": "v1.0.0",
       "title": "CSI: 3 Dimensions of Murder AiO Fix v1.0.0",
@@ -265,6 +282,19 @@
         {
           "name": "CSI3-AiO-Fix-Original-v1.0.0.zip",
           "url": "https://github.com/Tiger-Fury/CSI-3-Dimensions-of-Murder-AiO-Fix/releases/download/v1.0.0/CSI3-AiO-Fix-Original-v1.0.0.zip"
+        }
+      ]
+    },
+    "ghost-recon-wildlands": {
+      "repo": "Wildlands-Startup-Fix",
+      "tag": "v1.0.0",
+      "title": "Wildlands Startup Fix v1.0.0",
+      "publishedAt": "2026-11-27T19:53:23Z",
+      "url": "https://github.com/Tiger-Fury/Wildlands-Startup-Fix/releases/tag/v1.0.0",
+      "assets": [
+        {
+          "name": "Wildlands-Startup-Fix-v1.0.0.zip",
+          "url": "https://github.com/Tiger-Fury/Wildlands-Startup-Fix/releases/download/v1.0.0/Wildlands-Startup-Fix-v1.0.0.zip"
         }
       ]
     }
